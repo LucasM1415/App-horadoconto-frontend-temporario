@@ -44,7 +44,7 @@ class BookSection extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            PerfilScreen(), // Ajuste conforme necessário
+                            PerfilScreen2(), // Ajuste conforme necessário
                       ),
                     );
                   },

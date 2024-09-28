@@ -24,7 +24,7 @@ class HomeHeader extends StatelessWidget {
             press: () => Navigator.push(
               context,
               //Rota para cart
-              MaterialPageRoute(builder: (context) => PerfilScreen()),
+              MaterialPageRoute(builder: (context) => PerfilScreen2()),
             ),
           ),
           IconBtnWithCounter(

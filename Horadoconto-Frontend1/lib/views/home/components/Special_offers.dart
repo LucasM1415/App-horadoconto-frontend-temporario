@@ -1,3 +1,5 @@
+import 'package:hora_do_conto/models/livro.dart';
+import 'package:hora_do_conto/views/catalog/Catalog_Screen.dart';
 import 'package:hora_do_conto/views/home/components/Section_title.dart';
 import 'package:hora_do_conto/views/profile/tela_perfil.dart';
 import 'package:hora_do_conto/widgets/size_config.dart';
@@ -6,7 +8,9 @@ import 'package:flutter/material.dart';
 class SpecialOffers extends StatelessWidget {
   const SpecialOffers({
     super.key,
+    required this.livros,
   });
+  final List<Livro> livros;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,8 @@ class SpecialOffers extends StatelessWidget {
           press: () => Navigator.push(
             context,
             //Rota para catalog
-            MaterialPageRoute(builder: (context) => PerfilScreen()),
+            MaterialPageRoute(
+                builder: (context) => CatalogScreen(livros: livros)),
           ),
         ),
         SizedBox(height: getProportionateScreenWidth(18)),

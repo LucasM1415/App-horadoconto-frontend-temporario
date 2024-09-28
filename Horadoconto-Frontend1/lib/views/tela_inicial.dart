@@ -232,7 +232,7 @@ class _TelaInicialState extends State<TelaInicial> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PerfilScreen()),
+                    MaterialPageRoute(builder: (context) => PerfilScreen2()),
                   );
                 },
               ),

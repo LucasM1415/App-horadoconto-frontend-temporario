@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hora_do_conto/models/livro.dart';
 import 'package:hora_do_conto/views/home/components/book_card.dart';
-import 'package:hora_do_conto/views/home/components/section_title.dart';
 import 'package:hora_do_conto/views/profile/tela_perfil.dart';
 import 'package:hora_do_conto/widgets/size_config.dart';
 
@@ -19,15 +18,6 @@ class CatalogBookSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SectionTitle(
-          text: text,
-          press: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => PerfilScreen(),
-            ),
-          ),
-        ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
@@ -42,7 +32,7 @@ class CatalogBookSection extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            PerfilScreen(), // Navegação conforme necessário
+                            PerfilScreen2(), // Navegação conforme necessário
                       ),
                     );
                   },

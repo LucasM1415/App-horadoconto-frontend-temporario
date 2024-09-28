@@ -1,7 +1,8 @@
+import "package:hora_do_conto/models/livro.dart";
+import "package:hora_do_conto/views/home/home_screen.dart";
+import "package:hora_do_conto/views/profile/Profile_Screen.dart";
 import "package:hora_do_conto/views/profile/tela_perfil.dart";
 import "package:hora_do_conto/widgets/enums.dart";
-//import "package:biblioteca/screens/home/home_screen.dart";
-//import "package:biblioteca/screens/profile/Profile_Screen.dart";
 import "package:flutter/material.dart";
 import "package:flutter_svg/svg.dart";
 
@@ -9,8 +10,10 @@ class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
     super.key,
     required this.selectedMenu,
+    required this.livros,
   });
   final MenuState selectedMenu;
+  final List<Livro> livros;
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_declarations
@@ -38,9 +41,9 @@ class CustomBottomNavBar extends StatelessWidget {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  //Rota cátalogo
-                  builder: (context) =>
-                      PerfilScreen(), // Ajuste conforme sua tela de catálogo
+                  //Rota Home
+                  builder: (context) => HomeScreen(
+                      livros: livros), // Ajuste conforme sua tela de catálogo
                 ),
               ),
               icon: SvgPicture.asset(
@@ -57,8 +60,8 @@ class CustomBottomNavBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   //Rota cátalogo
-                  builder: (context) =>
-                      PerfilScreen(), // Ajuste conforme sua tela de catálogo
+                  builder: (context) => HomeScreen(
+                      livros: livros), // Ajuste conforme sua tela de catálogo
                 ),
               ),
               icon: SvgPicture.asset(
@@ -76,7 +79,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 MaterialPageRoute(
                   //Rota cátalogo
                   builder: (context) =>
-                      PerfilScreen(), // Ajuste conforme sua tela de catálogo
+                      PerfilScreen2(), // Ajuste conforme sua tela de catálogo
                 ),
               ),
               icon: SvgPicture.asset(
@@ -93,8 +96,9 @@ class CustomBottomNavBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   //Rota cátalogo
-                  builder: (context) =>
-                      PerfilScreen(), // Ajuste conforme sua tela de catálogo
+                  builder: (context) => ProfileScreen(
+                    livros: livros,
+                  ), // Ajuste conforme sua tela de catálogo
                 ),
               ),
               icon: SvgPicture.asset(

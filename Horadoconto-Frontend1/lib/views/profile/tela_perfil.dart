@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-class PerfilScreen extends StatelessWidget {
+class PerfilScreen2 extends StatelessWidget {
   final FlutterSecureStorage storage = FlutterSecureStorage();
 
   Future<Map<String, String?>> _getUserInfo() async {

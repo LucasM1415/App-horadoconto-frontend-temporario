@@ -19,8 +19,9 @@ class HomeScreen extends StatelessWidget {
       data: AppTheme.lightTheme(context),
       child: Scaffold(
         body: Body(livros: livros), // Passa a lista para o Body
-        bottomNavigationBar: const CustomBottomNavBar(
+        bottomNavigationBar: CustomBottomNavBar(
           selectedMenu: MenuState.home,
+          livros: livros,
         ),
       ),
     );
