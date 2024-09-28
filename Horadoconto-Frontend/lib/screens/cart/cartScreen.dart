@@ -1,6 +1,5 @@
 import 'package:biblioteca/components/default_button.dart';
 import 'package:biblioteca/models/Cart.dart';
-import 'package:biblioteca/models/Product.dart';
 import 'package:biblioteca/screens/cart/components/body.dart';
 import 'package:biblioteca/size_config.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,7 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: const Body(),
-      bottomNavigationBar: CheckOurCart(),
+      bottomNavigationBar: const CheckOurCart(),
     );
   }
 

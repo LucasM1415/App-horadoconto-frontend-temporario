@@ -43,7 +43,7 @@ class _BodyState extends State<Body> {
                   color: const Color(0xFFF6F7F9),
                   child: Column(
                     children: [
-                      Container(
+                      SizedBox(
                         height: getProportionateScreenWidth(7),
                         width: getProportionateScreenWidth(40),
                       ),

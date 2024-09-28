@@ -2,12 +2,11 @@ import 'package:biblioteca/models/Product.dart';
 import 'package:biblioteca/screens/catalog/components/Custom_AppBar.dart';
 import 'package:biblioteca/screens/catalog/components/Product_Section.dart';
 import 'package:biblioteca/screens/home/components/Home_Header.dart';
-
 import 'package:biblioteca/size_config.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
-  const Body({Key? key});
+  const Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
