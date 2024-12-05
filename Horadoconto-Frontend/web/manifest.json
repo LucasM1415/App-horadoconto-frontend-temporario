@@ -1,6 +1,6 @@
 {
-    "name": "biblioteca",
-    "short_name": "biblioteca",
+    "name": "hora_do_conto",
+    "short_name": "hora_do_conto",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
